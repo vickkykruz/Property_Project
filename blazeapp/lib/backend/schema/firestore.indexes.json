@@ -1,0 +1,18 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "places",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "max_people",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "placeRef",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ]
+}

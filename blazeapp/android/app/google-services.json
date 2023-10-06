@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "384364189688",
+    "project_id": "blazeapp-d9447",
+    "storage_bucket": "blazeapp-d9447.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384364189688:android:f9f15fefbeb77696f4a80d",
+        "android_client_info": {
+          "package_name": "com.mycompany.jun15airbnb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb6dxfRHprMGl4o_MMzwPN7TrKL5F8B4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
