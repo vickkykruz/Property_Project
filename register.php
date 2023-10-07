@@ -121,18 +121,22 @@ require_once('./partials/header/_auth.header.php');
                     <?php
                     if (isset($_GET['view']) == "property" && isset($_GET['id']) && isset($_GET['propertyTitle'])) { ?>
                         <input type="hidden" name="propertyId" id="propertyId" value="<?= $_GET['id'] ?> />
-                    <div class=" col-lg-12">
-                        <button type="button" id="submitbtn" class="btn common-btn">Register</button>
-                </div>
+                        <div class=" col-lg-12">
+                            <button type="button" id="submitbtn" class="btn common-btn">Register</button>
+                        </div>
+                    </div>
+                    <h4>Or</h4>
+
+                    <h5>Already Have An Account? <a href="login.php?view=property&id=<?= $_GET['id'] ?>&propertyTitle=<?= $_GET['propertyTitle'] ?>">Login</a></h5>
             <?php } else { ?>
                 <div class="col-lg-12">
                     <button type="button" id="submitbtn" class="btn common-btn">Register</button>
                 </div>
-            <?php } ?>
-        </div>
-        <h4>Or</h4>
+            </div>
+            <h4>Or</h4>
 
-        <h5>Already Have An Account? <a href="login.html">Login</a></h5>
+            <h5>Already Have An Account? <a href="login.html">Login</a></h5>
+            <?php } ?>
         </form>
     </div>
 </div>
