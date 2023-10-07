@@ -5,32 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/boxicons.min.css">
 
-    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/nice-select.min.css">
 
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/meanmenu.css">
 
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/animate.min.css">
 
-    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/fonts/flaticon.css">
 
-    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/odometer.min.css">
 
-    <link rel="stylesheet" href="assets/css/modal-video.min.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/modal-video.min.css">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/style.css">
 
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/responsive.css">
 
-    <link rel="stylesheet" href="assets/css/theme-dark.css">
+    <link rel="stylesheet" href="http://localhost/Property_Project/assets/css/theme-dark.css">
     <title>Blaze - Bridging Gaps in Logistics</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="http://localhost/Property_Project/assets/images/favicon.png">
 </head>
 
 <body>
@@ -101,8 +101,8 @@
                 <div class="col-sm-2 col-lg-2">
                     <div class="left">
                         <a href="index.html">
-                            <img src="assets/images/logo.png" class="logo-one" alt="Logo">
-                            <img src="assets/images/logo-two.png" class="logo-two" alt="Logo">
+                            <img src="http://localhost/Property_Project/assets/images/logo.png" class="logo-one" alt="Logo">
+                            <img src="http://localhost/Property_Project/assets/images/logo-two.png" class="logo-two" alt="Logo">
                         </a>
                     </div>
                 </div>
