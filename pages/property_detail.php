@@ -6,6 +6,7 @@ if (!isset($_GET['view']) || empty($_GET['view']) || !isset($_GET['id']) || empt
 }
 
 $propertyId = $_GET['id'];
+$view = $_GET['view'];
 
 //! Database Connection
 require_once('../database/db.php');
@@ -201,8 +202,8 @@ require_once('../partials/_header.php');
                 <h6>Packing Space</h6>
                 <?php if ($fetchDetail['squareF'] == 0) { ?>
                   <small style="margin-top: -8px !important"> None </small>
-                <?php }else{ ?>
-                  <small style="margin-top: -8px !important"> <?= $fetchDetail['squareF']?></small>
+                <?php } else { ?>
+                  <small style="margin-top: -8px !important"> <?= $fetchDetail['squareF'] ?></small>
                 <?php } ?>
               </td>
               <td>
@@ -213,10 +214,17 @@ require_once('../partials/_header.php');
           </tbody>
         </table>
 
-        <a class="text-center common-btn mt-3 w-100" href="properties.html#">
-          <i class="bx bxs-cart"></i>
-          Order Proerty
-        </a>
+        <?php if ($view == "property") {  ?>
+          <a class="text-center common-btn mt-3 w-100" href="../login.php?view=property&id=<?= $rowDetail['id'] ?>&propertyTitle=<?= $rowDetail['propertyName']?>">
+            <i class="bx bxs-cart"></i>
+            Order Proerty
+          </a>
+        <?php } else { ?>
+          <a class="text-center common-btn mt-3 w-100" href="properties.html#">
+            <i class="bx bxs-cart"></i>
+            Order Proerty
+          </a>
+        <?php } ?>
       </div>
     </div>
   </div>
