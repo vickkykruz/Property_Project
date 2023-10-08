@@ -15,13 +15,13 @@ require_once('./partials/header/_auth.header.php');
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="index.html#" class="nav-link active">Home</a>
+                            <a href="index.php" class="nav-link active">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="properties.html" class="nav-link dropdown-toggle">Rent a House</a>
+                            <a href="login.php" class="nav-link dropdown-toggle">Rent a House</a>
                         </li>
                         <li class="nav-item">
-                            <a href="properties.html" class="nav-link dropdown-toggle">Hire a Car</a>
+                            <a href="login.php" class="nav-link dropdown-toggle">Hire a Car</a>
                         </li>
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">Contact</a>
@@ -31,7 +31,7 @@ require_once('./partials/header/_auth.header.php');
                         </li>
                     </ul>
                     <div class="side-nav">
-                        <a class="left" href="login.html">
+                        <a class="left" href="login.php">
                             <i class="bx bxs-user"></i>
                             Login
                         </a>
@@ -55,7 +55,7 @@ require_once('./partials/header/_auth.header.php');
                     <h2>Register</h2>
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li>
                             <span>Register</span>
@@ -145,254 +145,9 @@ require_once('./partials/header/_auth.header.php');
 
 
 
-<footer class="footer-area pt-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-lg-3">
-                <div class="footer-item">
-                    <div class="footer-logo">
-                        <div class="top">
-                            <a class="logo" href="index.html">
-                                <img src="assets/images/logo.png" class="footer-logo1" alt="Logo">
-                                <img src="assets/images/logo-two.png" class="footer-logo2" alt="Logo">
-                            </a>
-                            <p>Bridging Gaps in Logistics</p>
-                            <ul>
-                                <li>
-                                    <a href="index.html#" target="_blank">
-                                        <i class="bx bxl-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" target="_blank">
-                                        <i class="bx bxl-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" target="_blank">
-                                        <i class="bx bxl-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="index.html#" target="_blank">
-                                        <i class="bx bxl-youtube"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="footer-item">
-                    <div class="footer-links">
-                        <h3>Quick Links</h3>
-                        <div class="top">
-                            <div class="left">
-                                <ul>
-                                    <li>
-                                        <a href="about.html">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Rent a car</a>
-                                    </li>
-                                    <li>
-                                        <a href="properties.html">Rent a house</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="footer-item">
-                    <div class="footer-links">
-                        <h3>Quick Links</h3>
-                        <div class="top">
-                            <div class="left">
-                                <ul>
-                                    <li>
-                                        <a href="about.html">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Rent a car</a>
-                                    </li>
-                                    <li>
-                                        <a href="properties.html">Rent a house</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="footer-item">
-                    <div class="footer-contact">
-                        <h3>Contact Information</h3>
-                        <div class="top">
-                            <ul>
-                                <li>
-                                    <i class="bx bx-current-location"></i>
-                                    <a href="index.html#">NiCON plaza Left Wing Abuja, Nigeria</a>
-                                    <span>Meet Us In Office</span>
-                                </li>
-                                <li>
-                                    <i class="bx bx-mail-send"></i>
-                                    <a href="mailto:info@blaze.com.ng"><span class="" data-cfemail="">info@blaze.com.ng</span></a>
-                                    <span>Drop Us A Line</span>
-                                </li>
-                                <li>
-                                    <i class="bx bxs-hourglass"></i>
-                                    <p>24 HRS</p>
-                                    <span>Office Hour</span>
-                                </li>
-                            </ul>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-area">
-            <p>Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>Designed By <a href="#" target="_blank">Team Balewites</a>
-            </p>
-        </div>
-    </div>
-</footer>
+<?php 
+require_once("./partials/_footer.php");
+require_once("./partials/scripts/_auth.register.script.php");
+?>
 
-
-
-<div class="go-top">
-    <i class="bx bxs-arrow-to-top"></i>
-    <i class="bx bxs-arrow-to-top"></i>
-</div>
-
-
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-
-<script src="assets/js/form-validator.min.js"></script>
-
-<script src="assets/js/contact-form-script.js"></script>
-
-<script src="assets/js/jquery.ajaxchimp.min.js"></script>
-
-<script src="assets/js/jquery.nice-select.min.js"></script>
-
-<script src="assets/js/jquery.meanmenu.js"></script>
-
-<script src="assets/js/owl.carousel.min.js"></script>
-
-<script src="assets/js/wow.min.js"></script>
-
-<script src="assets/js/odometer.min.js"></script>
-<script src="assets/js/jquery.appear.min.js"></script>
-
-<script src="assets/js/jquery-modal-video.min.js"></script>
-
-<script src="assets/js/custom.js"></script>
-<script>
-    $("body").on("click", "#submitbtn", function() {
-        $("#submitbtn").html('<i style="color:white;" class="fa fa-spinner fa-spin"></i>');
-        var name = $("#fullname").val();
-        var email = $("#emailaddress").val();
-        var password = $("#userpassword").val();
-        var confirmpass = $("#confuserpassword").val();
-
-        var usertype = $('#slectusertype').val();
-
-        var checkStatus = $('.form-check-input').prop('checked');
-
-        var checkforatsign = email.includes("@");
-        if (checkStatus == true) {
-            var term = 'yes';
-        } else {
-            var term = 'no';
-        }
-
-
-        if (name == '' || email == '' || confirmpass == '' || password == '') {
-            $("#registerresponse").html('<div class="alert alert-warning" role="alert"><center><i class="fa fa-warning"></i>  Fill all fields to proceed!!</center></div>');
-            $("#submitbtn").html("Register");
-            $("html, #registerresponse").animate({
-                scrollTop: 500
-            }, "slow");
-        } else if (password !== confirmpass) {
-            $("#registerresponse").html('<div class="alert alert-warning" role="alert"><center><i class="fa fa-warning"></i>Confirm the correct Password to Proceed!!</center></div>');
-            $("#submitbtn").html("Register");
-            $("html, #registerresponse").animate({
-                scrollTop: 500
-            }, "slow");
-        } else if (term == 'no') {
-            $("#registerresponse").html('<div class="alert alert-warning" role="alert"><center><i class="fa fa-warning"></i> Please read and agree to our terms and conditions to proceed!!</center></div>');
-            $("#submitbtn").html("Register");
-            $("html, #registerresponse").animate({
-                scrollTop: 500
-            }, "slow");
-        } else if (checkforatsign !== true) {
-            $("#registerresponse").html('<div class="alert alert-warning" role="alert"><center><i class="fa fa-warning"></i> Please enter a valid email address!!</center></div>');
-            $("#submitbtn").html("Register");
-            $("html, #registerresponse").animate({
-                scrollTop: 500
-            }, "slow");
-
-        } else {
-
-            $.ajax({
-                type: 'post',
-                url: "scripts/signup.php", //Here you will fetch records 
-                data: 'name=' + name + '&usertype=' + usertype + '&email=' + email + '&password=' + password,
-                success: function(data) {
-                    $("#registerresponse").html('');
-
-                    var dataresponse = (data);
-
-                    if (dataresponse == '3') {
-                        $("#registerresponse").html('<div class="alert alert-warning" role="alert"><center><i class="fa fa-warning"></i>A user with this email address has already been created !! </center></div>');
-                        $("#submitbtn").html("Register");
-                        $("html, #registerresponse").animate({
-                            scrollTop: 500
-                        }, "slow");
-                    } else if (dataresponse == '1') {
-                        $("#registerresponse").html('<div class="alert alert-success"><center><small>User registration successful please wait </small>while we log you in<i class="fa fa-spinner fa-spin"></i> </center></div>');
-                        $("html, #registerresponse").animate({
-                            scrollTop: 500
-                        }, "slow");
-                        setTimeout(() => {
-                            window.location.href = "dashboard.php";
-                        }, 1000);
-
-                    } else if (dataresponse == '2') {
-                        $("#registerresponse").html('<div class="alert alert-success"><center><small>Vendor registration successful please wait </small>while we log you in<i class="fa fa-spinner fa-spin"></i> </center></div>');
-                        $("html, #registerresponse").animate({
-                            scrollTop: 500
-                        }, "slow");
-                        setTimeout(() => {
-                            window.location.href = "vendordashboard.php";
-                        }, 1000);
-
-                    } else {}
-
-                }
-
-            });
-
-        }
-
-    });
-</script>
-
-</body>
-
-</html>

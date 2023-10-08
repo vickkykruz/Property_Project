@@ -3,7 +3,7 @@ require_once('./partials/header/_auth.header.php');
 ?>
 <div class="navbar-area sticky-top">
   <div class="mobile-nav">
-    <a href="index.html" class="logo">
+    <a href="index.php" class="logo">
       <img src="assets/images/logo-two.png" alt="Logo" />
     </a>
   </div>
@@ -14,13 +14,13 @@ require_once('./partials/header/_auth.header.php');
         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="index.html#" class="nav-link active">Home</a>
+              <a href="index.php" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-              <a href="properties.html" class="nav-link dropdown-toggle">Rent a House</a>
+              <a href="login.php" class="nav-link dropdown-toggle">Rent a House</a>
             </li>
             <li class="nav-item">
-              <a href="properties.html" class="nav-link dropdown-toggle">Hire a Car</a>
+              <a href="login.php" class="nav-link dropdown-toggle">Hire a Car</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
@@ -30,11 +30,11 @@ require_once('./partials/header/_auth.header.php');
             </li>
           </ul>
           <div class="side-nav">
-            <a class="left" href="login.html">
+            <a class="left" href="login.php">
               <i class="bx bxs-user"></i>
               Login
             </a>
-            <a class="left two" href="properties.html">
+            <a class="left two" href="#properties.html">
               <i class="bx bx-chevron-right-circle"></i>
               New Properties
             </a>
@@ -53,7 +53,7 @@ require_once('./partials/header/_auth.header.php');
           <h2>Login</h2>
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <a href="index.php">Home</a>
             </li>
             <li>
               <span>Login</span>

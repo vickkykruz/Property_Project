@@ -5,7 +5,7 @@
                 <div class="footer-item">
                     <div class="footer-logo">
                         <div class="top">
-                            <a class="logo" href="index.html">
+                            <a class="logo" href="index.php">
                                 <img src="assets/images/logo.png" class="footer-logo1" alt="Logo">
                                 <img src="assets/images/logo-two.png" class="footer-logo2" alt="Logo">
                             </a>
@@ -17,17 +17,17 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="index.html#" target="_blank">
+                                    <a href="#index.html#" target="_blank">
                                         <i class="bx bxl-twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="index.html#" target="_blank">
+                                    <a href="#index.html#" target="_blank">
                                         <i class="bx bxl-instagram"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="index.html#" target="_blank">
+                                    <a href="#index.html#" target="_blank">
                                         <i class="bx bxl-youtube"></i>
                                     </a>
                                 </li>
@@ -47,10 +47,10 @@
                                         <a href="about.html">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="services.html">Rent a car</a>
+                                        <a href="loginn.php">Rent a car</a>
                                     </li>
                                     <li>
-                                        <a href="properties.html">Rent a house</a>
+                                        <a href="login.php">Rent a house</a>
                                     </li>
                                     <li>
                                         <a href="contact.html">Contact</a>
@@ -72,10 +72,10 @@
                                         <a href="about.html">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="services.html">Rent a car</a>
+                                        <a href="login.php">Rent a car</a>
                                     </li>
                                     <li>
-                                        <a href="properties.html">Rent a house</a>
+                                        <a href="login.php">Rent a house</a>
                                     </li>
                                     <li>
                                         <a href="contact.html">Contact</a>

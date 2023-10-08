@@ -23,7 +23,8 @@ if($countemail > 0)
 else
 {
 
-  
+ 
+ 
               
                     $sql = mysqli_query($link,"INSERT INTO `users_tbl`( `users_name`, `users_email`, 
                     `users_password`, `users_type`,`users_regdate`) VALUES ('$name','$email','$password','$usertype','$DateCreated')");

@@ -20,7 +20,7 @@ require_once('./partials/_header.php');
         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="index.html#" class="nav-link active">Home</a>
+              <a href="index.php" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
               <a href="login.php" class="nav-link dropdown-toggle">Rent a House</a>
@@ -36,11 +36,11 @@ require_once('./partials/_header.php');
             </li>
           </ul>
           <div class="side-nav">
-            <a class="left" href="login.html">
+            <a class="left" href="login.php">
               <i class="bx bxs-user"></i>
               Account
             </a>
-            <a class="left two" href="properties.html">
+            <a class="left two" href="#properties.html">
               <i class="bx bx-chevron-right-circle"></i>
               New Properties
             </a>

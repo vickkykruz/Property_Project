@@ -5,7 +5,6 @@ $email = $_POST['useremail'];
 
 $password = $_POST['userpassword'];
 
-
     $sql = mysqli_query($link,"SELECT * FROM `users_tbl` WHERE `users_email`='$email' AND `users_password`='$password'");
     $count = mysqli_num_rows($sql);
 
