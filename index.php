@@ -23,10 +23,10 @@ require_once('./partials/_header.php');
               <a href="index.php" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-              <a href="login.php" class="nav-link dropdown-toggle">Rent a House</a>
+              <a href="pages/property.php" class="nav-link dropdown-toggle">Rent a House</a>
             </li>
             <li class="nav-item">
-              <a href="login.php" class="nav-link dropdown-toggle">Hire a Car</a>
+              <a href="javascript:void(0)" class="nav-link dropdown-toggle">Hire a Car</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
@@ -40,7 +40,7 @@ require_once('./partials/_header.php');
               <i class="bx bxs-user"></i>
               Account
             </a>
-            <a class="left two" href="#properties.html">
+            <a class="left two" href="pages/property.php">
               <i class="bx bx-chevron-right-circle"></i>
               New Properties
             </a>
@@ -66,10 +66,10 @@ require_once('./partials/_header.php');
                 <form>
                   <ul class="tabs banner-form-tag">
                     <li>
-                      <a href="login.php">Rent a car</a>
+                      <a href="javascript:void(0)">Rent a car</a>
                     </li>
                     <li>
-                      <a href="login.php">Rent a house</a>
+                      <a href="pages/property.php">Rent a house</a>
                     </li>
                   </ul>
                 </form>
@@ -112,7 +112,7 @@ require_once('./partials/_header.php');
                   <ul class="tabs banner-form-tag">
 
                     <li>
-                      <a href="login.php">Rent a house</a>
+                      <a href="pages/property.php">Rent a house</a>
                     </li>
                   </ul>
                 </form>
@@ -123,31 +123,49 @@ require_once('./partials/_header.php');
       </div>
     </div>
   </div>
-  <div class="s003">
+  <!--- Search box -->
+  <div class="s002">
     <form>
+
       <div class="inner-form">
         <div class="input-field first-wrap">
-          <div class="input-select">
-            <select data-trigger="" name="choices-single-defaul">
-              <option placeholder="">Category</option>
-              <option>Rent</option>
-              <option>Sell</option>
-            </select>
+          <div class="icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+              </path>
+            </svg>
           </div>
+          <input id="search" type="text" placeholder="Enter Location" />
         </div>
         <div class="input-field second-wrap">
-          <input id="search" type="text" placeholder="Seach for Location, brands of cars, houses etc." />
+          <div class="icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z">
+              </path>
+            </svg>
+          </div>
+          <input class="datepicker" id="depart" type="text" placeholder="29 Aug 2018" />
         </div>
         <div class="input-field third-wrap">
-          <button class="btn-search" type="button">
-            <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+          <div class="icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z">
+              </path>
             </svg>
-          </button>
+          </div>
+          <input class="datepicker" id="return" type="text" placeholder="30 Aug 2018" />
+        </div>
+        <div class="input-field fifth-wrap">
+          <button style="font-size: 1rem;" id="selction_place" class="btn-search" type="button">SELECT ROOM</button>
+
+        </div>
+        <div class="input-field fifth-wrap mt-1">
+          <button style="font-size: 1rem;" class="btn-search" type="button">CHECK AVALIABLITY</button>
         </div>
       </div>
     </form>
   </div>
+  <!--- End Search Box -->
 </div>
 
 
@@ -171,15 +189,25 @@ require_once('./partials/_header.php');
             <img src="assets/<?= $propertyRow['properyImage'] ?>" alt="Apartment">
             <div class="inner">
               <h3>
-                <a href="property-details.html"><?= $propertyRow['propertyName'] ?></a>
+                <a href="property-details.html">
+                  <?= $propertyRow['propertyName'] ?>
+                </a>
               </h3>
-              <span>NGN <?= number_format($propertyRow['amount']) ?></span>
+              <span>NGN
+                <?= number_format($propertyRow['amount']) ?>
+              </span>
               <ul>
 
-                <li><?= $fetchDetail['bedRoom'] ?> BD</li>
-                <li><?= $fetchDetail['bathRoom'] ?> BA</li>
+                <li>
+                  <?= $fetchDetail['bedRoom'] ?> BD
+                </li>
+                <li>
+                  <?= $fetchDetail['bathRoom'] ?> BA
+                </li>
                 <?php if ($fetchDetail['squareF'] != 0) { ?>
-                  <li><?= $fetchDetail['squareF'] ?> SF</li>
+                  <li>
+                    <?= $fetchDetail['squareF'] ?> SF
+                  </li>
                 <?php
                 } ?>
               </ul>
@@ -342,7 +370,8 @@ require_once('./partials/_header.php');
     <div class="section-title">
       <span class="sub-title">Why Choose Us</span>
       <h2>Blaze: Your Ideal Home and Car Rental Solution</h2>
-      <p>Blaze offers a diverse range of houses and cars for you to choose from. Whether you're planning a vacation or simply need a stylish ride, we've got options that suit your needs.</p>
+      <p>Blaze offers a diverse range of houses and cars for you to choose from. Whether you're planning a vacation or
+        simply need a stylish ride, we've got options that suit your needs.</p>
     </div>
     <div class="row">
       <div class="col-sm-6 col-lg-3">
@@ -356,21 +385,24 @@ require_once('./partials/_header.php');
         <div class="choose-item">
           <i class="flaticon-real-estate-agent"></i>
           <h3>User-Friendly Platform</h3>
-          <p>Our user-focused website boasts intuitive design, ensuring renters and owners enjoy effortless navigation and satisfaction.</p>
+          <p>Our user-focused website boasts intuitive design, ensuring renters and owners enjoy effortless navigation
+            and satisfaction.</p>
         </div>
       </div>
       <div class="col-sm-6 col-lg-3">
         <div class="choose-item">
           <i class="flaticon-key"></i>
           <h3>List Your Property or Car</h3>
-          <p>List your house or car add stunning photos and descriptions to highlight its beauty andd attract customers.</p>
+          <p>List your house or car add stunning photos and descriptions to highlight its beauty andd attract customers.
+          </p>
         </div>
       </div>
       <div class="col-sm-6 col-lg-3">
         <div class="choose-item">
           <i class="flaticon-sale"></i>
           <h3>Verified Renters</h3>
-          <p>Your safety is our top priority. Our meticulous vetting process guarantees renter identity verification, offering peace of mind.</p>
+          <p>Your safety is our top priority. Our meticulous vetting process guarantees renter identity verification,
+            offering peace of mind.</p>
         </div>
       </div>
     </div>
@@ -379,28 +411,32 @@ require_once('./partials/_header.php');
         <div class="choose-item">
           <i class="flaticon-real-estate-agent"></i>
           <h3>Detailed Listings</h3>
-          <p>Empowering informed choices,our exhaustive listings offer precise details,vivid imagery,and clear specifications for absolute confidence</p>
+          <p>Empowering informed choices,our exhaustive listings offer precise details,vivid imagery,and clear
+            specifications for absolute confidence</p>
         </div>
       </div>
       <div class="col-sm-6 col-lg-3">
         <div class="choose-item">
           <i class="flaticon-location"></i>
           <h3>Transparent Pricing</h3>
-          <p>Zero hidden costs or surprises. Our crystal-clear pricing guarantees full transparency, so you know your exact expenditure.</p>
+          <p>Zero hidden costs or surprises. Our crystal-clear pricing guarantees full transparency, so you know your
+            exact expenditure.</p>
         </div>
       </div>
       <div class="col-sm-6 col-lg-3">
         <div class="choose-item">
           <i class="flaticon-sale"></i>
           <h3>Listing Management</h3>
-          <p>Easily manage your listings, update availability, and track your earnings through your personalized dashboard.</p>
+          <p>Easily manage your listings, update availability, and track your earnings through your personalized
+            dashboard.</p>
         </div>
       </div>
       <div class="col-sm-6 col-lg-3">
         <div class="choose-item">
           <i class="flaticon-key"></i>
           <h3>24/7 Support</h3>
-          <p>Our dedicated support team is available round the clock to assist you with any questions or concerns. We're here to ensure your experience is worry-free.</p>
+          <p>Our dedicated support team is available round the clock to assist you with any questions or concerns. We're
+            here to ensure your experience is worry-free.</p>
         </div>
       </div>
     </div>
@@ -417,7 +453,8 @@ require_once('./partials/_header.php');
     <div class="section-title">
       <span class="sub-title">What You Need</span>
       <h2>We Offer Top-Notch Car & House Rental Services</h2>
-      <p>Whether you're an owner with a property or car to share or a renter seeking an unforgettable experience, Blaze is your trusted partner in the world of house and car rentals.</p>
+      <p>Whether you're an owner with a property or car to share or a renter seeking an unforgettable experience, Blaze
+        is your trusted partner in the world of house and car rentals.</p>
     </div>
     <div class="row">
       <div class="col-sm-6 col-lg-3 p-0">
@@ -426,7 +463,8 @@ require_once('./partials/_header.php');
           <h3>
             <a href="service-details.html">Daily Rentals</a>
           </h3>
-          <p>Longer-term rental options are available, making Blaze suitable for weekend getaways or extended vacations.</p>
+          <p>Longer-term rental options are available, making Blaze suitable for weekend getaways or extended vacations.
+          </p>
         </div>
       </div>
       <div class="col-sm-6 col-lg-3 p-0">
@@ -453,7 +491,8 @@ require_once('./partials/_header.php');
           <h3>
             <a href="service-details.html">Secure Payment</a>
           </h3>
-          <p>Blaze guarantees secure transactions via a dependable payment system equipped with fraud protection measures.</p>
+          <p>Blaze guarantees secure transactions via a dependable payment system equipped with fraud protection
+            measures.</p>
         </div>
       </div>
     </div>

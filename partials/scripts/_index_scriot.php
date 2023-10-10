@@ -21,6 +21,26 @@
 <script src="assets/js/jquery-modal-video.min.js"></script>
 
 <script src="assets/js/custom.js"></script>
+<script src="pages/assets/js/choices.js"></script>
+  <script src="pages/assets/js/flatpickr.js"></script>
+  <script>
+    flatpickr(".datepicker",
+    {});
+
+  </script>
+  <script>
+    const choices = new Choices('[data-trigger]',
+    {
+      searchEnabled: false,
+      itemSelectText: '',
+    });
+
+    $(document).ready(function() {
+      $("#selction_place").click(function() {
+        alert("Hello, Rooms");
+      })
+    })
+  </script>
 </body>
 
 </html>

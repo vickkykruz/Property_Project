@@ -47,10 +47,10 @@
                                         <a href="about.html">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="loginn.php">Rent a car</a>
+                                        <a href="javascript:void(0)">Rent a car</a>
                                     </li>
                                     <li>
-                                        <a href="login.php">Rent a house</a>
+                                        <a href="pages/property.php">Rent a house</a>
                                     </li>
                                     <li>
                                         <a href="contact.html">Contact</a>
@@ -72,10 +72,10 @@
                                         <a href="about.html">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="login.php">Rent a car</a>
+                                        <a href="javascript:void(0)">Rent a car</a>
                                     </li>
                                     <li>
-                                        <a href="login.php">Rent a house</a>
+                                        <a href="pages/property.php">Rent a house</a>
                                     </li>
                                     <li>
                                         <a href="contact.html">Contact</a>

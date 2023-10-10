@@ -26,123 +26,33 @@ require_once('../partials/_header.php');
   </div>
 
   <!--- Navbar Link -->
-  <div class="main-nav three">
+  <div class="main-nav">
     <div class="container">
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="properties.html#" class="nav-link dropdown-toggle">Home <i class="bx bx-chevron-down"></i></a>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="index.html" class="nav-link">Home Demo One</a>
-                </li>
-                <li class="nav-item">
-                  <a href="index-2.html" class="nav-link">Home Demo Two</a>
-                </li>
-                <li class="nav-item">
-                  <a href="index-3.html" class="nav-link">Home Demo Three</a>
-                </li>
-              </ul>
+              <a href="index.php" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="properties.html#" class="nav-link dropdown-toggle">Pages <i class="bx bx-chevron-down"></i></a>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="properties.html#" class="nav-link dropdown-toggle">Users <i class="bx bx-chevron-down"></i></a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a href="login.html" class="nav-link">Login</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="register.html" class="nav-link">Register</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="team.html" class="nav-link">Team</a>
-                </li>
-                <li class="nav-item">
-                  <a href="portfolio.html" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a href="faq.html" class="nav-link">FAQ</a>
-                </li>
-                <li class="nav-item">
-                  <a href="coming-soon.html" class="nav-link">Coming Soon</a>
-                </li>
-                <li class="nav-item">
-                  <a href="404.html" class="nav-link">404 Error Page</a>
-                </li>
-                <li class="nav-item">
-                  <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-                </li>
-                <li class="nav-item">
-                  <a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
-                </li>
-              </ul>
+              <a href="./property.php" class="nav-link active dropdown-toggle">Rent a House</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="properties.html#" class="nav-link dropdown-toggle">Services <i class="bx bx-chevron-down"></i></a>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="services.html" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a href="service-details.html" class="nav-link">Service Details</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="properties.html#" class="nav-link dropdown-toggle active">Properties <i class="bx bx-chevron-down"></i></a>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="properties.html" class="nav-link active">Properties</a>
-                </li>
-                <li class="nav-item">
-                  <a href="property-right-sidebar.html" class="nav-link">Property Right Sidebar</a>
-                </li>
-                <li class="nav-item">
-                  <a href="property-left-sidebar.html" class="nav-link">Property Left Sidebar</a>
-                </li>
-                <li class="nav-item">
-                  <a href="property-details.html" class="nav-link">Property Details</a>
-                </li>
-                <li class="nav-item">
-                  <a href="apartments.html" class="nav-link">Apartments</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="properties.html#" class="nav-link dropdown-toggle">Blog <i class="bx bx-chevron-down"></i></a>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="blog.html" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="blog-left-sidebar.html" class="nav-link">Blog Left Sidebar</a>
-                </li>
-                <li class="nav-item">
-                  <a href="blog-right-sidebar.html" class="nav-link">Blog Right Sidebar</a>
-                </li>
-                <li class="nav-item">
-                  <a href="blog-details.html" class="nav-link">Blog Details</a>
-                </li>
-              </ul>
+              <a href="javascript:void(0)" class="nav-link dropdown-toggle">Hire a Car</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
             </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
           </ul>
           <div class="side-nav">
-            <a class="left" href="login.html">
+            <a class="left" href="login.php">
               <i class="bx bxs-user"></i>
               Account
             </a>
-            <a class="left two" href="properties.html">
+            <a class="left two" href="property.php">
               <i class="bx bx-chevron-right-circle"></i>
               New Properties
             </a>
@@ -162,69 +72,241 @@ require_once('../partials/_header.php');
           <img class="w-100" src="../assets/<?= $rowDetail['properyImage'] ?>" alt="House image" />
         </div>
         <!--- Share Property --->
-        <div class="share-container mt-2">
-          <h6>Share This Property</h6>
+        <div class="share-container mt-2 mb-2">
+          <h5>Facilities</h5>
+          <div class="d-inline-flex flex-row flex-wrap">
+            <div class="p-2 m-1" style="border: 1px solid #ccc;">
+              <span class="material-symbols-outlined">
+                pool
+              </span>
+              <span style="font-size: .8rem;">Outdoor swimming pool</span>
+            </div>
+            <div class="p-2 m-1" style="border: 1px solid #ccc;">
+              <span class="material-symbols-outlined">
+                shower
+              </span>
+              <span style="font-size: .8rem;">Private Bathroom</span>
+            </div>
+            <div class="p-2 m-1" style="border: 1px solid #ccc;">
+              <span class="material-symbols-outlined">
+                hotel
+              </span>
+              <span style="font-size: .8rem;">Private Bedroom</span>
+            </div>
+            <div class="p-2 m-1" style="border: 1px solid #ccc;">
+              <span class="material-symbols-outlined">
+                bathtub
+              </span>
+              <span style="font-size: .8rem;">Bathtub</span>
+            </div>
+            <div class="p-2 m-1" style="border: 1px solid #ccc;">
+              <span class="material-symbols-outlined">
+                local_parking
+              </span>
+              <span style="font-size: .8rem;">Free Parking</span>
+            </div>
+            <div class="p-2 m-1" style="border: 1px solid #ccc;">
+              <span class="material-symbols-outlined">
+                wifi
+              </span>
+              <span style="font-size: .8rem;">Free WiFi</span>
+            </div>
+            <div class="p-2 m-1" style="border: 1px solid #ccc;">
+              <span class="material-symbols-outlined">
+                airport_shuttle
+              </span>
+              <span style="font-size: .8rem;">Airport Shuttle</span>
+            </div>
+            <div class="p-2 m-1" style="border: 1px solid #ccc;">
+              <span class="material-symbols-outlined">
+                mode_fan
+              </span>
+              <span style="font-size: .8rem;">Air Condition</span>
+            </div>
+            <div class="p-2 m-1" style="border: 1px solid #ccc;">
+              <span class="material-symbols-outlined">
+                room_service
+              </span>
+              <span style="font-size: .8rem;">Room Services</span>
+            </div>
+          </div>
+
         </div>
       </div>
+
       <div class="col-lg-8 col-md-8 col-sm-12">
-        <h1 style="color: #18253e"><?= $rowDetail['propertyName'] ?></h1>
+        <h1 style="color: #18253e">PRESKEN WHITE HOUSE</h1>
         <hr style="margin-top: -5px" />
         <h5>Property Description</h5>
         <p>
-          <?= $rowDetail['propertyDesc'] ?>
+          Set in Lagos, 3.7 km from Nike Art Gallery, PRESKEN WHITE HOUSE offers accommodation with an outdoor
+          swimming pool, free private parking, a shared lounge and a restaurant. With a bar, the 3-star hotel has
+          air-conditioned rooms with free WiFi
         </p>
-        <hr style="margin-top: -8px" />
-        <h5>Property Details</h5>
-        <table class="table table-striped table-bordered">
-          <tbody>
-            <tr>
-              <td>
-                <h6>Type</h6>
-                <small style="margin-top: -8px !important">Detached Duplex</small>
-              </td>
-              <td>
-                <h6>Market Status</h6>
-                <small style="margin-top: -8px !important"><?= ucfirst($rowDetail['marketStatus']) ?></small>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h6>Bedroom</h6>
-                <small style="margin-top: -8px !important"><?= $fetchDetail['bedRoom'] ?></small>
-              </td>
-              <td>
-                <h6>Bathroom</h6>
-                <small style="margin-top: -8px !important"><?= $fetchDetail['bathRoom'] ?></small>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h6>Packing Space</h6>
-                <?php if ($fetchDetail['squareF'] == 0) { ?>
-                  <small style="margin-top: -8px !important"> None </small>
-                <?php } else { ?>
-                  <small style="margin-top: -8px !important"> <?= $fetchDetail['squareF'] ?></small>
-                <?php } ?>
-              </td>
-              <td>
-                <h6>Service Changes</h6>
-                <small style="margin-top: -8px !important">NGN <?= number_format($rowDetail['amount'], 2) ?></small>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <button type="button" class="btn btn-outline-primary w-100" style="margin-top: -5px;">Show me more</button>
 
-        <?php if ($view == "property") {  ?>
-          <a class="text-center common-btn mt-3 w-100" href="../login.php?view=property&id=<?= $rowDetail['id'] ?>&propertyTitle=<?= $rowDetail['propertyName']?>">
+        <div class="d-flex mt-2 mb-3 p-2 justify-content-between" style="border: 1px solid #ccc; border-radius: 3px;">
+          <div class="first-con">
+            <h6>Sign in, save money</h6>
+            <p>You could save 10% or more at this property when you sign in</p>
+            <div class="d-inline-flex align-items-center">
+              <button type="button" class="btn btn-outline-primary m-1" style="margin-top: -5px;">Sign in</button>
+              <a href="">Create Account</a>
+            </div>
+          </div>
+          <div class="second-con">
+            <img src="../assets/images/signads.png" height="75px" width="80px" alt="">
+          </div>
+        </div>
+
+
+
+        <!-- <a class="text-center common-btn mt-3 w-100" href="properties.html#">
             <i class="bx bxs-cart"></i>
             Order Proerty
-          </a>
-        <?php } else { ?>
-          <a class="text-center common-btn mt-3 w-100" href="properties.html#">
-            <i class="bx bxs-cart"></i>
-            Order Proerty
-          </a>
-        <?php } ?>
+        </a> -->
+      </div>
+    </div>
+    <hr>
+    <!--- Search box -->
+    <h3 class="mt-3">Availability</h3>
+    <p class="text-danger"><i class="bx bxl-info"></i> Select dates to see the property's availability and price
+    </p>
+    <div class="s002">
+      <form>
+
+        <div class="inner-form">
+          <div class="input-field first-wrap">
+            <div class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                </path>
+              </svg>
+            </div>
+            <input id="search" type="text" placeholder="Enter Location" />
+          </div>
+          <div class="input-field second-wrap">
+            <div class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z">
+                </path>
+              </svg>
+            </div>
+            <input class="datepicker" id="depart" type="text" placeholder="29 Aug 2018" />
+          </div>
+          <div class="input-field third-wrap">
+            <div class="icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z">
+                </path>
+              </svg>
+            </div>
+            <input class="datepicker" id="return" type="text" placeholder="30 Aug 2018" />
+          </div>
+          <div class="input-field fifth-wrap">
+            <button style="font-size: 1rem;" id="selction_place" class="btn-search" type="button">SELECT
+              ROOM</button>
+
+          </div>
+          <div class="input-field fifth-wrap mt-1">
+            <button style="font-size: 1rem;" class="btn-search" type="button">CHECK AVALIABLITY</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--- End Search Box -->
+    <table class="table table-bordered mt-2">
+      <thead>
+        <tr>
+          <th>Room Type</th>
+          <th>Sleep</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width: 60%">
+            <h6>
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+              <a href="http://" target="_blank" rel="noopener noreferrer">Superior King Room</a>
+            </h6>
+            <small>1 extra large double bed</small>
+          </td>
+          <td style="width: 20%">
+            <div class="d-inline-flex">
+              <span class="material-symbols-outlined">
+                person
+              </span>
+              <span class="material-symbols-outlined">
+                person
+              </span>
+            </div>
+          </td>
+          <td style="width: 20%">
+            <button id="show_price" class="btn btn-primary w-100" type="button">Show Price</button>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 60%">
+            <h6>
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+              <a href="http://" target="_blank" rel="noopener noreferrer">Superior Queen Room</a>
+            </h6>
+            <small>1 extra large double bed</small>
+          </td>
+          <td style="width: 20%">
+            <div class="d-inline-flex">
+              <span class="material-symbols-outlined">
+                person
+              </span>
+              <span class="material-symbols-outlined">
+                person
+              </span>
+            </div>
+          </td>
+          <td style="width: 20%">
+            <button id="show_price" class="btn btn-primary w-100" type="button">Show Price</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h4>Guest reviews</h4>
+    <div class="rate-info">
+      <span class="badge bg-primary">8.7</span>
+      <small class="text-mute" style="margin-top: -15px">191 views</small>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="progress mt-3" role="progressbar" aria-label="Example with label" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="height: 15px">
+          <div class="progress-bar bg-primary" style="width: 90%">Cleanliness: 90%</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="progress mt-2" role="progressbar" aria-label="Example with label" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="height: 15px">
+          <div class="progress-bar bg-primary" style="width: 80%">Location: 80%</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="progress mt-2" role="progressbar" aria-label="Example with label" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="height: 15px">
+          <div class="progress-bar bg-success" style="width: 85%">Value for money: 85%</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="progress mt-2" role="progressbar" aria-label="Example with label" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="height: 15px">
+          <div class="progress-bar bg-primary" style="width: 80%">Location: 80%</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="progress mt-2" role="progressbar" aria-label="Example with label" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="height: 15px">
+          <div class="progress-bar bg-success" style="width: 85%">Value for money: 85%</div>
+        </div>
       </div>
     </div>
   </div>
